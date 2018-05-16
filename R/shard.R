@@ -236,6 +236,7 @@ do.party_df <- function(.data, ...) {
   shard_call(.data, quote(dplyr::do), ...)
 }
 
+#' @export
 shard_call <- function(party_df, fun, ..., groups = party_df$partition) {
   dots <- rlang::quos(...)
   call <- rlang::call2(fun, as.name(party_df$name), !!!dots)
