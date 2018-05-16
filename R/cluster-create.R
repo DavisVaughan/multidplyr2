@@ -1,11 +1,11 @@
 #' @export
-create_cluster <- function(cores = NA, quiet = FALSE) {
+create_cluster <- function(cores = NA, quiet = FALSE, ...) {
   if (is.na(cores)) {
     cores <- guess_cores()
   }
 
   if (!quiet) message("Initialising ", cores, " core cluster.")
-  sock_cluster <- future::makeClusterPSOCK(cores)
+  sock_cluster <- future::makeClusterPSOCK(cores, ...)
   #cluster <- parallel::makePSOCKcluster(cores)
   attr(sock_cluster, "finaliser") <- cluster_stop(sock_cluster)
 
