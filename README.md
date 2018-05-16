@@ -1,6 +1,8 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+![](https://img.shields.io/badge/lifecycle-experimental-brightgreen.svg)
+
 # multidplyr2
 
 `multidplyr2` is a revamp of `multidplyr` that uses a subset of the
