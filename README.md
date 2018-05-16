@@ -17,9 +17,11 @@ cluster on a Unix machine and use that instead. `future` has a nice
 connecting to clusters on external machines.
 
 *There is still more work to do. I would like to update the internals
-from `lazyeval` to `rlang`. I’m also still thinking about what other
-benefits come from using `future`. It also needs documentation but if
-you know how to use `multidplyr`, you essentially know how to use this.*
+from `lazyeval` to `rlang`. There are a few warnings you might run into
+from outdated `dplyr` code, but it still works. I’m still thinking about
+what other benefits come from using `future`. It also needs
+documentation but if you know how to use `multidplyr`, you essentially
+know how to use this.*
 
 ## Installation
 
