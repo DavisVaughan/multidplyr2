@@ -11,7 +11,7 @@ Depends:
     dplyr,
     future
 Imports:
-    lazyeval
+    rlang
 RoxygenNote: 6.0.1
 URL: https://github.com/DavisVaughan/multidplyr2
 BugReports: https://github.com/DavisVaughan/multidplyr2/issues
