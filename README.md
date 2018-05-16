@@ -16,12 +16,9 @@ cluster on a Unix machine and use that instead. `future` has a nice
 `makeClusterPSOCK()` function that provides additional functionality for
 connecting to clusters on external machines.
 
-*There is still more work to do. I would like to update the internals
-from `lazyeval` to `rlang`. There are a few warnings you might run into
-from outdated `dplyr` code, but it still works. I’m still thinking about
-what other benefits come from using `future`. It also needs
-documentation but if you know how to use `multidplyr`, you essentially
-know how to use this.*
+*There is still more work to do. I’m still thinking about what other
+benefits come from using `future`. It also needs documentation but if
+you know how to use `multidplyr`, you essentially know how to use this.*
 
 ## Installation
 
@@ -47,7 +44,6 @@ Let’s partition `iris` by `Species`.
 ``` r
 iris_part <- partition(iris, Species)
 #> Initialising 3 core cluster.
-#> Warning: group_indices_.grouped_df ignores extra arguments
 
 iris_part
 #> Source: party_df [150 x 5]
